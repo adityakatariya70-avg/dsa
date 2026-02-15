@@ -8,7 +8,7 @@ for(int i= 1; i<=n;i++){
         cout<<n-j<<" ";
     }
     for(int j=1;j<2*i;j++){
-        cout<<"*"<<" ";
+        cout<<" ";
     }
     for(int j=i;j>=1;j--){
         cout<<n-j+1<<" ";
@@ -21,7 +21,7 @@ for(int i=n-1;i>=1;i--){
         cout<<n-j<<" ";
     }
     for(int j=i;j<2*i;j++){
-        cout<<"*"<<" ";
+        cout<<" ";
     }
     for(int j=i;j>=1;j--){
         cout<<n-j+1<<" ";

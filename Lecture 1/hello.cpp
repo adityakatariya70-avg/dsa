@@ -1,11 +1,15 @@
 #include<iostream>
 using namespace std;
-int main(){
-int a=6;
-for (int i=0;i<=a;i++){
-for(int j=1;j<=a-i-1;j++){
+int main() {
+	long n;
+	int digit;
+	cin>>n;
+	cin>>digit;
+while(n>0){
+	int j=n%10;
     cout<<j;
+	
 }
-cout<<endl;
-}
+
+	return 0;
 }
