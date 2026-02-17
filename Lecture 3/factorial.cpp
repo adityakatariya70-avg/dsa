@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 int main(){
-   long long n;
-   long long fact=1;
+   int n;
+   long fact=1;
     cin>>n;
     for(int i=1;i<=n;i++){
         fact=fact*i;
-        cout<<fact;
+        cout<<fact<<endl;
        
     }
-    return 0;
+    
 }
