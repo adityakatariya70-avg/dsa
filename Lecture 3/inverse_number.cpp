@@ -1,8 +1,9 @@
-#include<iostream>
+#include <iostream>
 #include<vector>
-using namespace std;
+using namespace std; 
+
 vector<int> convert(int n){
-vector<int> number;
+vector<int>number;
 while(n!=0){
     int k=n%10;
 number.push_back(k);
@@ -12,16 +13,17 @@ return number;
 }
 
 int main(){
-    int n;
-    cin>>n;
-vector<int> number=convert(n);
-vector<int>ans (number.size()+1);
-for(int i=0;i<number.size();i++){
-    ans[number[i]]=i+1;
-}
-for(int i=number.size();i>0;i--){
-    cout<<ans[i];
-}
-return 0;
+   int n;
+   cin>>n;
+        vector<int> number=convert(n); 
+    vector<int> ans(number.size()+1); 
 
-    }
+    for(int i=0;i<number.size();i++){ 
+        ans[number[i]]=i+1; 
+    } 
+
+    for(int i=number.size();i>=1;i--){ 
+        cout<<ans[i]; 
+    } 
+    return 0; 
+}
